@@ -156,7 +156,18 @@ header .btn-group{
 }
 header .btn-group .sign-in {
     margin-right: 4px;
+}
 
+#toggle-btn {
+    display:none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right:20px;
+    cursor: pointer;
+    text-indent: -9999px;
 }
 #search-form{
     order: 1;
@@ -451,7 +462,7 @@ footer .logo:hover svg {
         margin-bottom: 12px;
     }
     #search-form {
-        margin-top:122px;
+        margin-top:12px;
         margin-right:0;
     }
     #search {
@@ -467,15 +478,30 @@ footer .logo:hover svg {
     header .toggle {
         display:none;
     }
-    #toggle-btn {
-        background: url("../img/toggle-btn.svg");
-        width: 18px;
-        height: 24px;
-        position: absolute;
-        top: 16px;
-        right:20px;
-        cursor: pointer;
-        text-indent: -9999px;
+    header .toggle.on {
+        display:block;
     }
-    
+    #toggle-btn {
+        display:block;
+    }
+
+    /* VISUAL */
+    .section--visual {
+        background-image: url("../img/bg-small.jpg");
+    }
+    .section--visual .inner {
+        display: block;
+        max-width: none;
+        padding: 80px 20px;
+    }
+    .section--visual .summary {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #sign-form{
+        width: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
